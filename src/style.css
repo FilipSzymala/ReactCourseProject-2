@@ -10,12 +10,21 @@ body {
     font-family: "Intern", sans-serif;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin: 100px 36px;
+}
+
 /* navbar */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
+    padding: 0 36px;
     background-color: #F55A5A;
 }
 
@@ -23,8 +32,64 @@ nav {
     display: flex;
     align-items: center;
     column-gap: 7px;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: -0.075em;
     color: #FFF;
 }
 
+/* cards */
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    max-width: 500px;
+}
+
+.card__background {
+    background-image: url('https://via.placeholder.com/2000'); /* background-image dynamically switched in JS */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text__location {
+    display: flex;
+    align-items: center;
+}
+
+.text__location img {
+    height: 100%;
+    margin-right: 7px;
+}
+
+.text__location .country-name,
+.text__location .google-maps-link {
+    font-size: 16px;
+}
+
+.text__location .country-name {
+    margin-right: 14px;
+    letter-spacing: 0.17em;
+    color: #2B283A;
+}
+
+.text__location .google-maps-link {
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.text__info h1 {
+    font-size: 32px;
+}
+
+.text__info p {
+    line-height: 150%;
+}

@@ -7,8 +7,11 @@ import "./style.css"
 export default function App() {
     return (
         <>
-            {/* <Navbar /> */}
-            <PlaceCard />
+            <Navbar />
+            <section>
+                <PlaceCard />
+                <PlaceCard />
+            </section> 
         </>
     )
 }
