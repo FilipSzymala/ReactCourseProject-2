@@ -1,11 +1,14 @@
 import React from "react"
-import Navbar from "./Navbar"
-import PlaceCard from "./PlaceCard"
+import Navbar from "./components/Navbar"
+import PlaceCard from "./components/PlaceCard"
 import journalData from "./journalData"
+import "./style.css"
 
 export default function App() {
     return (
-        <Navbar />
-        <PlaceCard />
+        <>
+            {/* <Navbar /> */}
+            <PlaceCard />
+        </>
     )
 }

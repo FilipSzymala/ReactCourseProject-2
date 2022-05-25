@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* utility */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Intern", sans-serif;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #F55A5A;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    font-size: 18px;
+    letter-spacing: -0.075em;
+    color: #FFF;
+}
+
