@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
 /* utility */
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: "Intern", sans-serif;
@@ -14,7 +12,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 36px;
     margin: 100px 36px;
 }
 
@@ -32,7 +30,8 @@ nav {
     display: flex;
     align-items: center;
     column-gap: 7px;
-    font-size: 14px;
+    font-size: 18px;
+    font-size: 20px;
     letter-spacing: -0.075em;
     color: #FFF;
 }
@@ -42,15 +41,15 @@ nav {
 .card {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 168px;
     column-gap: 20px;
-    max-width: 470px;
+    max-width: 600px;
 }
 
 .card__background {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
+    /* background-image dynamically switched in JS */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 5px;
 }
 
@@ -58,17 +57,15 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
 }
 
 .text__location {
     display: flex;
     align-items: center;
-    font-size: 12px;
 }
 
 .text__location img {
-    height: 16px;
+    height: 18px;
     margin-right: 7px;
 }
 
@@ -85,12 +82,9 @@ nav {
 }
 
 .text__info h1 {
-    margin: 0;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 32px;
 }
 
-.text__info b, .text__info p {
-    font-size: 10px;
+.text__info p {
     line-height: 150%;
-}
+} 

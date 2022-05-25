@@ -3,8 +3,12 @@ import locationIcon from "../images/location-icon.svg"
 export default function PlaceCard(props) {
     return (
         <div className="card">
-            <div className="card__background">
-                <img src={props.imageUrl}/>
+            <div className="card__background"
+                style={{
+                    backgroundImage: `url(${props.imageUrl})`
+                }}
+            >
+                {/* <img src={props.imageUrl}/> */}
             </div>
             <div className="card__text">
                 <p className="text__location">
