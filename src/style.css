@@ -14,7 +14,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
+    gap: 40px;
     margin: 100px 36px;
 }
 
@@ -32,7 +32,7 @@ nav {
     display: flex;
     align-items: center;
     column-gap: 7px;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: -0.075em;
     color: #FFF;
 }
@@ -42,15 +42,15 @@ nav {
 .card {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 168px;
     column-gap: 20px;
-    max-width: 500px;
+    max-width: 470px;
 }
 
 .card__background {
-    background-image: url('https://via.placeholder.com/2000'); /* background-image dynamically switched in JS */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
     border-radius: 5px;
 }
 
@@ -58,25 +58,23 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 }
 
 .text__location {
     display: flex;
     align-items: center;
+    font-size: 12px;
 }
 
 .text__location img {
-    height: 100%;
+    height: 16px;
     margin-right: 7px;
-}
-
-.text__location .country-name,
-.text__location .google-maps-link {
-    font-size: 16px;
 }
 
 .text__location .country-name {
     margin-right: 14px;
+    text-transform: uppercase;
     letter-spacing: 0.17em;
     color: #2B283A;
 }
@@ -87,9 +85,16 @@ nav {
 }
 
 .text__info h1 {
-    font-size: 32px;
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.text__info b {
+    font-size: 10px;
 }
 
 .text__info p {
+    font-size: 10px;
     line-height: 150%;
 }
