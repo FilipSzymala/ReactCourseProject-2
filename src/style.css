@@ -90,11 +90,7 @@ nav {
     line-height: 30px;
 }
 
-.text__info b {
-    font-size: 10px;
-}
-
-.text__info p {
+.text__info b, .text__info p {
     font-size: 10px;
     line-height: 150%;
 }
