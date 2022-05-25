@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* Note: Not every font, div etc. size was taken from figma project because of accesibility issues (too small font etc.) */
+
 /* utility */
 * {
     box-sizing: border-box;
@@ -87,4 +89,4 @@ nav {
 
 .text__info p {
     line-height: 150%;
-} 
+}
