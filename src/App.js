@@ -6,18 +6,15 @@ import "./style.css"
 
 export default function App() {
     const cards = journalData.map(card => {
-        return <PlaceCard 
-                    key = {card.id}
-                    {...card}
-                />
+        return <PlaceCard key = {card.id} {...card} />
     })
 
     return (
         <>
             <Navbar />
-            <section>
+            <main>
                 {cards}
-            </section> 
+            </main> 
         </>
     )
 }
