@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* Note: Not every font, div etc. size was taken from figma project because of accesibility issues (too small font etc.) */
+
+/* utility */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Intern", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin: 100px 36px;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0 36px;
+    background-color: #F55A5A;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: -0.075em;
+    color: #FFF;
+}
+
+/* cards */
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    max-width: 600px;
+}
+
+.card__background {
+    /* background-image dynamically switched in JS */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__text__location {
+    display: flex;
+    align-items: center;
+}
+
+.card__text__location img {
+    height: 18px;
+    margin-right: 7px;
+}
+
+.card__text__location .country-name {
+    margin-right: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    color: #2B283A;
+}
+
+.card__text__location .google-maps-link {
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.card__text__info h1 {
+    font-size: 32px;
+}
+
+.card__text__info p {
+    line-height: 150%;
+}
